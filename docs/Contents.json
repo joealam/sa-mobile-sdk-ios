@@ -12,6 +12,14 @@
                 {
                     "name": "Integrating the SDK",
                     "text": "01 Getting Started/02 Integrate.md"
+                },
+                {
+                    "name": "Including the SDK in your project",
+                    "text": "01 Getting Started/03 Include.md"
+                },
+                {
+                    "name": "Potential issues",
+                    "text": "01 Getting Started/04 Good to know.md"
                 }
             ]
         },
@@ -73,16 +81,12 @@
             "text": "05 ParentalGate.md"
         },
         {
-            "name": "Testing Placements",
-            "text": "06 Testing Placements.md"
-        },
-        {
             "name": "Technical Support",
-            "text": "07 Technical Support.md"
+            "text": "06 Technical Support.md"
         },
         {
             "name": "License",
-            "text": "08 License.md"
+            "text": "07 License.md"
         }
     ]
 }
