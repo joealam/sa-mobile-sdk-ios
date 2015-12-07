@@ -18,7 +18,7 @@
                     "text": "<p>Once you&#39;ve integrated the SuperAwesome SDK, you can access all functionality by including the SuperAwesome header file:</p>\n<pre><code>#import &quot;SuperAwesome.h&quot;\n</code></pre>"
                 },
                 {
-                    "name": "Potential issues",
+                    "name": "Before you start",
                     "text": "<p>One thing to note is that sometimes, even though you&#39;re accesing SuperAwesome server data through HTTPS, the actual ad content is on HTTP, which on iOS 9+ will cause issues.</p>\n<p>To circumvent this, add the following to your .plist file:</p>\n<pre><code>&lt;dict&gt;\n    &lt;key&gt;NSAllowsArbitraryLoads&lt;/key&gt;\n    &lt;true/&gt;\n&lt;/dict&gt;\n</code></pre>"
                 }
             ]
