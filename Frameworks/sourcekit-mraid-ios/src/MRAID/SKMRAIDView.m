@@ -1063,6 +1063,8 @@ typedef enum {
         }
     }
     scrollView.scrollEnabled = NO;
+    wv.scalesPageToFit = YES;
+    wv.contentMode = UIViewContentModeScaleAspectFit;
     
     // disable selection
     NSString *js = @"window.getSelection().removeAllRanges();";

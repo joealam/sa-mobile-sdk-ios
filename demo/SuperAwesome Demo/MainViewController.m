@@ -21,10 +21,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [[SuperAwesome getInstance] enableTestMode];
+    [[SuperAwesome getInstance] disableTestMode];
     
     [SALoader setDelegate:self];
-    [SALoader loadAdForPlacementId:28000];
+    [SALoader loadAdForPlacementId:30016];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,14 +35,21 @@
 #pragma mark <SALoaderProtocol>
 
 - (void) didLoadAd:(SAAd *)ad {
-    SAFullscreenVideoAd *fvad = [[SAFullscreenVideoAd alloc] init];
-    [fvad setAd:ad];
-    [fvad setAdDelegate:self];
-    [fvad setParentalGateDelegate:self];
-    [fvad setVideoDelegate:self];
-    [fvad setIsParentalGateEnabled:YES];
-    [self presentViewController:fvad animated:YES completion:^{
-        [fvad play];
+//    SAFullscreenVideoAd *fvad = [[SAFullscreenVideoAd alloc] init];
+//    [fvad setAd:ad];
+//    [fvad setAdDelegate:self];
+//    [fvad setParentalGateDelegate:self];
+//    [fvad setVideoDelegate:self];
+//    [fvad setIsParentalGateEnabled:YES];
+//    [self presentViewController:fvad animated:YES completion:^{
+//        [fvad play];
+//    }];
+    
+    SAInterstitialAd *iad = [[SAInterstitialAd alloc] init];
+    [iad setAd:ad];
+    [iad setParentalGateDelegate:false];
+    [self presentViewController:iad animated:YES completion:^{
+        [iad play];
     }];
 }
 
